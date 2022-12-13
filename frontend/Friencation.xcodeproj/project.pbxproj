@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C498D810294392C800F3475E /* FriencationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D80F294392C800F3475E /* FriencationApp.swift */; };
+		C498D812294392C800F3475E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D811294392C800F3475E /* ContentView.swift */; };
+		C498D814294392C900F3475E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C498D813294392C900F3475E /* Assets.xcassets */; };
+		C498D817294392C900F3475E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C498D816294392C900F3475E /* Preview Assets.xcassets */; };
+		C498D819294392C900F3475E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D818294392C900F3475E /* Persistence.swift */; };
+		C498D81C294392C900F3475E /* Friencation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C498D81A294392C900F3475E /* Friencation.xcdatamodeld */; };
+		C498D827294392C900F3475E /* FriencationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D826294392C900F3475E /* FriencationTests.swift */; };
+		C498D831294392C900F3475E /* FriencationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D830294392C900F3475E /* FriencationUITests.swift */; };
+		C498D833294392C900F3475E /* FriencationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D832294392C900F3475E /* FriencationUITestsLaunchTests.swift */; };
+		C498D84229439D5100F3475E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D84129439D5100F3475E /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C498D823294392C900F3475E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C498D804294392C800F3475E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C498D80B294392C800F3475E;
+			remoteInfo = Friencation;
+		};
+		C498D82D294392C900F3475E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C498D804294392C800F3475E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C498D80B294392C800F3475E;
+			remoteInfo = Friencation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C498D80C294392C800F3475E /* Friencation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friencation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C498D80F294392C800F3475E /* FriencationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriencationApp.swift; sourceTree = "<group>"; };
+		C498D811294392C800F3475E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C498D813294392C900F3475E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C498D816294392C900F3475E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C498D818294392C900F3475E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C498D81B294392C900F3475E /* Friencation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Friencation.xcdatamodel; sourceTree = "<group>"; };
+		C498D81D294392C900F3475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C498D822294392C900F3475E /* FriencationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriencationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C498D826294392C900F3475E /* FriencationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriencationTests.swift; sourceTree = "<group>"; };
+		C498D82C294392C900F3475E /* FriencationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriencationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C498D830294392C900F3475E /* FriencationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriencationUITests.swift; sourceTree = "<group>"; };
+		C498D832294392C900F3475E /* FriencationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriencationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C498D84129439D5100F3475E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C498D809294392C800F3475E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D81F294392C900F3475E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D829294392C900F3475E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C498D803294392C800F3475E = {
+			isa = PBXGroup;
+			children = (
+				C498D80E294392C800F3475E /* Friencation */,
+				C498D825294392C900F3475E /* FriencationTests */,
+				C498D82F294392C900F3475E /* FriencationUITests */,
+				C498D80D294392C800F3475E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C498D80D294392C800F3475E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C498D80C294392C800F3475E /* Friencation.app */,
+				C498D822294392C900F3475E /* FriencationTests.xctest */,
+				C498D82C294392C900F3475E /* FriencationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C498D80E294392C800F3475E /* Friencation */ = {
+			isa = PBXGroup;
+			children = (
+				C498D80F294392C800F3475E /* FriencationApp.swift */,
+				C498D811294392C800F3475E /* ContentView.swift */,
+				C498D84129439D5100F3475E /* LocationManager.swift */,
+				C498D813294392C900F3475E /* Assets.xcassets */,
+				C498D818294392C900F3475E /* Persistence.swift */,
+				C498D81D294392C900F3475E /* Info.plist */,
+				C498D81A294392C900F3475E /* Friencation.xcdatamodeld */,
+				C498D815294392C900F3475E /* Preview Content */,
+			);
+			path = Friencation;
+			sourceTree = "<group>";
+		};
+		C498D815294392C900F3475E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C498D816294392C900F3475E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C498D825294392C900F3475E /* FriencationTests */ = {
+			isa = PBXGroup;
+			children = (
+				C498D826294392C900F3475E /* FriencationTests.swift */,
+			);
+			path = FriencationTests;
+			sourceTree = "<group>";
+		};
+		C498D82F294392C900F3475E /* FriencationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C498D830294392C900F3475E /* FriencationUITests.swift */,
+				C498D832294392C900F3475E /* FriencationUITestsLaunchTests.swift */,
+			);
+			path = FriencationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C498D80B294392C800F3475E /* Friencation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C498D836294392C900F3475E /* Build configuration list for PBXNativeTarget "Friencation" */;
+			buildPhases = (
+				C498D808294392C800F3475E /* Sources */,
+				C498D809294392C800F3475E /* Frameworks */,
+				C498D80A294392C800F3475E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Friencation;
+			productName = Friencation;
+			productReference = C498D80C294392C800F3475E /* Friencation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C498D821294392C900F3475E /* FriencationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C498D839294392C900F3475E /* Build configuration list for PBXNativeTarget "FriencationTests" */;
+			buildPhases = (
+				C498D81E294392C900F3475E /* Sources */,
+				C498D81F294392C900F3475E /* Frameworks */,
+				C498D820294392C900F3475E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C498D824294392C900F3475E /* PBXTargetDependency */,
+			);
+			name = FriencationTests;
+			productName = FriencationTests;
+			productReference = C498D822294392C900F3475E /* FriencationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C498D82B294392C900F3475E /* FriencationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C498D83C294392C900F3475E /* Build configuration list for PBXNativeTarget "FriencationUITests" */;
+			buildPhases = (
+				C498D828294392C900F3475E /* Sources */,
+				C498D829294392C900F3475E /* Frameworks */,
+				C498D82A294392C900F3475E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C498D82E294392C900F3475E /* PBXTargetDependency */,
+			);
+			name = FriencationUITests;
+			productName = FriencationUITests;
+			productReference = C498D82C294392C900F3475E /* FriencationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C498D804294392C800F3475E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C498D80B294392C800F3475E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C498D821294392C900F3475E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C498D80B294392C800F3475E;
+					};
+					C498D82B294392C900F3475E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C498D80B294392C800F3475E;
+					};
+				};
+			};
+			buildConfigurationList = C498D807294392C800F3475E /* Build configuration list for PBXProject "Friencation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C498D803294392C800F3475E;
+			productRefGroup = C498D80D294392C800F3475E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C498D80B294392C800F3475E /* Friencation */,
+				C498D821294392C900F3475E /* FriencationTests */,
+				C498D82B294392C900F3475E /* FriencationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C498D80A294392C800F3475E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C498D817294392C900F3475E /* Preview Assets.xcassets in Resources */,
+				C498D814294392C900F3475E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D820294392C900F3475E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D82A294392C900F3475E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C498D808294392C800F3475E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C498D819294392C900F3475E /* Persistence.swift in Sources */,
+				C498D812294392C800F3475E /* ContentView.swift in Sources */,
+				C498D84229439D5100F3475E /* LocationManager.swift in Sources */,
+				C498D81C294392C900F3475E /* Friencation.xcdatamodeld in Sources */,
+				C498D810294392C800F3475E /* FriencationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D81E294392C900F3475E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C498D827294392C900F3475E /* FriencationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498D828294392C900F3475E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C498D831294392C900F3475E /* FriencationUITests.swift in Sources */,
+				C498D833294392C900F3475E /* FriencationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C498D824294392C900F3475E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C498D80B294392C800F3475E /* Friencation */;
+			targetProxy = C498D823294392C900F3475E /* PBXContainerItemProxy */;
+		};
+		C498D82E294392C900F3475E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C498D80B294392C800F3475E /* Friencation */;
+			targetProxy = C498D82D294392C900F3475E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C498D834294392C900F3475E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C498D835294392C900F3475E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C498D837294392C900F3475E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Friencation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requests for your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requests for your location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.Friencation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C498D838294392C900F3475E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Friencation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requests for your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requests for your location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.Friencation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C498D83A294392C900F3475E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.FriencationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friencation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Friencation";
+			};
+			name = Debug;
+		};
+		C498D83B294392C900F3475E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.FriencationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friencation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Friencation";
+			};
+			name = Release;
+		};
+		C498D83D294392C900F3475E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.FriencationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Friencation;
+			};
+			name = Debug;
+		};
+		C498D83E294392C900F3475E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yiwen-Wu.FriencationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Friencation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C498D807294392C800F3475E /* Build configuration list for PBXProject "Friencation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C498D834294392C900F3475E /* Debug */,
+				C498D835294392C900F3475E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C498D836294392C900F3475E /* Build configuration list for PBXNativeTarget "Friencation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C498D837294392C900F3475E /* Debug */,
+				C498D838294392C900F3475E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C498D839294392C900F3475E /* Build configuration list for PBXNativeTarget "FriencationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C498D83A294392C900F3475E /* Debug */,
+				C498D83B294392C900F3475E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C498D83C294392C900F3475E /* Build configuration list for PBXNativeTarget "FriencationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C498D83D294392C900F3475E /* Debug */,
+				C498D83E294392C900F3475E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C498D81A294392C900F3475E /* Friencation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C498D81B294392C900F3475E /* Friencation.xcdatamodel */,
+			);
+			currentVersion = C498D81B294392C900F3475E /* Friencation.xcdatamodel */;
+			path = Friencation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C498D804294392C800F3475E /* Project object */;
+}
