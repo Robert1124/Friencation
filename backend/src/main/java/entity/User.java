@@ -1,3 +1,5 @@
+package entity;
+
 public class User {
     private final String user_id;
 

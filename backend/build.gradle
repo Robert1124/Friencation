@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'friencation'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('sqlite-jdbc-3.40.0.0.jar')
+    implementation ('io.socket:engine.io-server:6.2.1')
+
+}
+
+application {
+    mainClass = 'Main'
+}
+
+test {
+    useJUnitPlatform()
+}

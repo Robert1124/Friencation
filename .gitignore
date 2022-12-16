@@ -1,0 +1,16 @@
+### Gradle ###
+*.iml
+.gradle
+.idea
+.DS_Store
+build
+local.properties
+
+src/main/resources/main.db
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+bin
+
+.vscode

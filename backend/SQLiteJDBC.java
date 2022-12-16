@@ -1,7 +1,8 @@
 import java.sql.*;
 import java.util.NoSuchElementException;
 
-import statements.*;
+import src.main.java.entity.User;
+import src.main.java.statements.*;
 
 public class SQLiteJDBC {
 
@@ -30,7 +31,7 @@ public class SQLiteJDBC {
         return sqLiteJDBC;
     }
 
-    private Connection getConnection(){
+    public Connection getConnection(){
         try{
             if(connect == null){
                 connect = DriverManager.getConnection("jdbc:sqlite:friencation.db");
