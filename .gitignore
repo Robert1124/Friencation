@@ -12,5 +12,5 @@ src/main/resources/main.db
 gradle-app.setting
 
 bin
-
+backend/src/main/resources/*
 .vscode

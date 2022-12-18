@@ -1,11 +1,16 @@
 package database;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import entity.User;
 import statements.*;
@@ -40,7 +45,7 @@ public class Database {
      */
     public static void deleteDatabase() {
         DBConnection.getInstance().closeConnection();
-        boolean deleted = DBConnection.getInstance().deleteDBFile();
+        //boolean deleted = DBConnection.getInstance().deleteDBFile();
     }
 
     /**
@@ -92,6 +97,22 @@ public class Database {
         s.execute();
         s.close();
         DBConnection.getInstance().commitChanges();
+
+        // File f = new File("src/main/resources/"+user.getID()+".txt");
+        // f.createNewFile();
+        // FileWriter w = new FileWriter(f);
+        // w.write(user.getID()+"\n"+user.getName()+"\n"+user.getPass()+"\n\n"+user.getLatitude()+"\n"+user.getLongitude());
+        // w.flush();
+        // w.close();
+
+        String path = "src/main/resources/"+user.getID()+".txt";
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.writeValue(new File(path), user);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -131,6 +152,18 @@ public class Database {
         s.execute();
         s.close();
         DBConnection.getInstance().commitChanges();
+
+        String path = "src/main/resources/"+id+".txt";
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            User temp = mapper.readValue(new File(path), User.class);
+            temp.setName(name);
+            mapper.writeValue(new File(path), temp);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
     }
 
     /**
@@ -147,6 +180,17 @@ public class Database {
         s.execute();
         s.close();
         DBConnection.getInstance().commitChanges();
+
+        String path = "src/main/resources/"+id+".txt";
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            User temp = mapper.readValue(new File(path), User.class);
+            temp.setPass(pass);
+            mapper.writeValue(new File(path), temp);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -163,6 +207,17 @@ public class Database {
         s.execute();
         s.close();
         DBConnection.getInstance().commitChanges();
+
+        String path = "src/main/resources/"+id+".txt";
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            User temp = mapper.readValue(new File(path), User.class);
+            temp.setLatitude(latitude);
+            mapper.writeValue(new File(path), temp);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -179,6 +234,17 @@ public class Database {
         s.execute();
         s.close();
         DBConnection.getInstance().commitChanges();
+
+        String path = "src/main/resources/"+id+".txt";
+
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            User temp = mapper.readValue(new File(path), User.class);
+            temp.setLongtitude(longitude);
+            mapper.writeValue(new File(path), temp);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -193,5 +259,15 @@ public class Database {
         s.setString(1, id);
         s.execute();
         s.close();
+        DBConnection.getInstance().commitChanges();
+
+        File f = new File("src/main/resources/"+id+".txt");
+        boolean result = f.delete();
+        if (result) {
+            System.out.println("File is successfully deleted.");
+        }
+        else {
+            System.out.println("File deletion failed.");
+        }
     }
 }

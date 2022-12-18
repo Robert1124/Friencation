@@ -1,9 +1,9 @@
 package entity;
 
 public class User {
-    private final String user_id;
+    private String id;
 
-    private String user_name;
+    private String name;
 
     private String password;
     
@@ -11,20 +11,28 @@ public class User {
 
     private String longitude;
 
-    public User(String user_id, String user_name, String password, String latitude, String longitude){
-        this.user_id = user_id;
-        this.user_name = user_name;
+    public User(){
+        id = null;
+        name = null;
+        password = null;
+        latitude = null;
+        longitude = null;
+    }
+
+    public User(String id, String name, String password, String latitude, String longitude){
+        this.id = id;
+        this.name = name;
         this.password = password;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
     public String getID(){
-        return user_id;
+        return id;
     }
 
     public String getName(){
-        return user_name;
+        return name;
     }
 
     public String getPass(){
@@ -39,8 +47,8 @@ public class User {
         return longitude;
     }
 
-    public void setName(String user_name){
-        this.user_name = user_name;
+    public void setName(String name){
+        this.name = name;
     }
 
     public void setPass(String password){
@@ -53,5 +61,9 @@ public class User {
 
     public void setLongtitude(String longitude){
         this.longitude = longitude;
+    }
+
+    public String toString(){
+        return "id:"+getID()+"\nname:"+getName()+"\npassword:"+getPass()+"\nla:"+getLatitude()+"\nlo:"+getLongitude();
     }
 }

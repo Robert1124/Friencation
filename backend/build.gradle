@@ -13,7 +13,8 @@ repositories {
 dependencies {
     implementation files('sqlite-jdbc-3.40.0.0.jar')
     implementation ('io.socket:engine.io-server:6.2.1')
-
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 }
 
 application {
